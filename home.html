@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <section>
+        <div class="container" id="container">
+          <div class="logo">
+            <!-- <img src="images/testbook-logo.png" alt=""> -->
+          </div>
+          <div class="app-heading">Mansuri's Quiz App</div>
+          <div class="user" id="user-name">Hello User!</div>
+          <div class="user-entry">Enter your name to continuos the course:</div>
+          <form id="user-input-field"  class="welcome_form"   name="welcome_form"  onsubmit="submitForm(event)">
+            <input type="text" class="input-text" id="input-field" placeholder="ENTER YOUR NAME" name="name" />
+            <button class="input-btn" id="display-btn">ENTER</button>
+          </form>
+          <div>You'll have 10 seconds to each questions</div>
+
+          <!-- Category Section -->
+
+          <h1>Select Category</h1>
+
+          <div id="category-container" class="category-container">
+            <button onclick="submitForm(event)"  class="section-btn">
+              HTML
+            </button>
+            <button onclick="submitForm(event)" class="section-btn">
+              CSS
+            </button>
+            <button onclick="submitForm(event)"  class="section-btn">
+              JAVASCRIPT
+            </button>
+            <button onclick="submitForm(event)"  class="section-btn">
+              PYTHON
+            </button>
+          </div>
+        </div>
+      </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
